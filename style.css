@@ -6,6 +6,7 @@
 
 body {
   background-color: steelblue;
+  color: #fff;
   font-family: 'Muli', sans-serif;
   display: flex;
   flex-direction: column;
@@ -17,8 +18,8 @@ body {
 }
 
 .container {
-  background-color: rgba(0,0,0,0.4);
-  padding: 30px 40px;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 20px 40px;
   border-radius: 5px;
 }
 
@@ -32,9 +33,34 @@ body {
   color: lightblue;
 }
 
+.btn{
+  cursor: pointer;
+  display: inline;
+  width: 100%;
+  background: lightblue;
+  padding: 15px;
+  font-family: inherit;
+  font-size: 16px;
+  border: 0;
+  border-radius: 5px;
+}
+
+.btn:focus {
+  outline: 0;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.text {
+  margin-top: 30px;
+}
+
 .form-control {
   position: relative;
   margin: 20px 0 40px;
+  width: 300px;
 }
 
 .form-control input {
@@ -44,5 +70,10 @@ body {
   display: block;
   width: 100%;
   padding: 15px 0;
+}
 
+.form-control input:focus,
+.form-control input:valid {
+  outline: 0;
+  border-bottom-color: lightblue;
 }
